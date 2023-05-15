@@ -1,11 +1,18 @@
 package Transport.BigTransport;
 
-public class Parohod implements UsePar{
-    boolean usePar;
+import Transport.Transport;
 
-    public Parohod(boolean usePar) {
+public class Parohod extends Transport implements UsePar{
+    boolean usePar;
+    public Parohod(String name) {
+        super(name);
+    }
+
+    public Parohod(String name, boolean usePar) {
+        super(name);
         this.usePar = usePar;
     }
+
     public void usePar(){
         System.out.println("Работает на пару? "+ (usePar?"Да":"Нет"));
     }

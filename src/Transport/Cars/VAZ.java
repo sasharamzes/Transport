@@ -1,12 +1,19 @@
 package Transport.Cars;
 
-public class VAZ implements isItTaxi{
+import Transport.Transport;
+public class VAZ extends Transport implements isItTaxi{
     boolean notTaxi;
 
-    public VAZ(boolean notTaxi) {
+    public VAZ(String name) {
+        super(name);
+    }
+
+    public VAZ(String name, boolean notTaxi) {
+        super(name);
         this.notTaxi = notTaxi;
     }
+
     public void isTaxy(){
-        System.out.println("Is it Taxi?" + (notTaxi?"Yes":"No"));
+        System.out.println("Это такси?" + (notTaxi?"Да":"Нет"));
     }
 }

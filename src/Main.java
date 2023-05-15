@@ -11,10 +11,13 @@ public class Main {
         Volga volga = new Volga(true);
         volga.isTaxy();
 
-        VAZ jiguli = new VAZ(false);
+        VAZ jiguli = new VAZ("Жигули", false);
+        jiguli.whotIsName();
         jiguli.isTaxy();
 
-        Parohod parohod = new Parohod(true);
+        Parohod parohod = new Parohod("Пароход", true);
+        parohod.whotIsName();
         parohod.usePar();
+
     }
 }
