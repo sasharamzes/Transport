@@ -1,3 +1,4 @@
+import Transport.Cars.VAZ;
 import Transport.Cars.Volga;
 import Transport.Parovoz;
 
@@ -8,5 +9,8 @@ public class Main {
 
         Volga volga = new Volga(true);
         volga.isTaxy();
+
+        VAZ jiguli = new VAZ(false);
+        jiguli.isTaxy();
     }
 }
