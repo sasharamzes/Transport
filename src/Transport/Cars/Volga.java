@@ -7,6 +7,6 @@ public class Volga implements isItTaxi{
         this.isTaxi = isTaxi;
     }
     public void isTaxy(){
-        System.out.println("Is it Taxi?" + (isTaxi?"Yes":"No"));
+        System.out.println("Это такси?" + (isTaxi?"Да":"Нет"));
     }
 }
